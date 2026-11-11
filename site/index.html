@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QR受付テスト</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="bar"><h1>QR 受付テスト（mock）</h1></header>
+  <main>
+    <p>イベント申込の当日受付で、運営者のスマホが申込者の QR をどれくらい速く・安定して読めるかを試すためのページです。中身はすべてダミーで、どこにも送信しません。</p>
+
+    <div class="links">
+      <a class="button primary" href="scan.html">受付スキャナ<span>運営者のスマホで開く</span></a>
+      <a class="button" href="show.html">申込 QR<span>申込者役のスマホで開く（スクショ保存のテストもここから）</span></a>
+      <a class="button" href="print.html">印刷用シート<span>紙の QR をサイズ・設定違いでまとめて印刷</span></a>
+    </div>
+
+    <section class="panel">
+      <h2>試し方</h2>
+      <ol class="steps">
+        <li>運営者役のスマホで「受付スキャナ」を、申込者役のスマホで「申込 QR」を開く。</li>
+        <li>スキャナの「設定」にある「条件メモ」に、いま試す条件を書く（例：<em>iPhone SE・画面・明るさ最低</em>）。</li>
+        <li>「カメラを起動」を押して、申込者の QR を読む。</li>
+        <li>「新しい QR にする」で別の申込にして、10人分くらい続けて読む。</li>
+        <li>条件メモを変えて、ほかの条件も試す（紙・スクショ・暗い場所・アプリ内ブラウザなど）。</li>
+        <li>最後に「記録をコピー」を押して、Discord に貼る。</li>
+      </ol>
+    </section>
+
+    <section class="panel">
+      <h2>見てほしいこと</h2>
+      <ul class="small">
+        <li>かざしてから読めるまでの速さ。読めない、または時間がかかる条件</li>
+        <li>同じ QR を読み直した時に「受付済み」と出るか</li>
+        <li>カメラの許可を何度も聞かれないか</li>
+        <li>音・振動・画面の色で、読めたことがすぐ分かるか</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
